@@ -7,7 +7,7 @@ class Categoria extends Conectar {
         $sql="SELECT * FROM tm_categoria WHERE est=1";
         $sql=$conectar->prepare($sql);
         $sql->execute();
-        return $resultado=$sql->fetchaALL();
+        return $resultado=$sql->fetchAll();
 
     }
 }
